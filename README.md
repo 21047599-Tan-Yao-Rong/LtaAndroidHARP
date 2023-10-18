@@ -90,7 +90,7 @@ Under Gaming
 
 ## Installing and Importing Packages in Unity
 
-In a new project, choose Windows > Package Manager and select "+" > Add package from disk. Then download and unzip the package.json file under the RokidUXR_SDK_Unity_ForDock/sxrunitysdk-UXR_vdock directory, and import the Google Cardboard plug-in.
+In a new project, choose Windows > Package Manager and select "+" > Add package from disk. Then [download](https://ota-g.rokidcdn.com/toB/Rokid_Glass/SDK/UXR_SDK/Unity/forDock/RokidUXR_Unity_ForDock_v1.6.2.zip) and unzip the package.json file under the RokidUXR_SDK_Unity_ForDock/sxrunitysdk-UXR_vdock directory, and import the Google Cardboard plug-in.
 
 ![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image.png)
 
