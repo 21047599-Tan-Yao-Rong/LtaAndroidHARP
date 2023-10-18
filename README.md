@@ -1,7 +1,3 @@
-<img width="449" alt="image" src="https://github.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/assets/106369408/4199b8b0-7468-4f2a-b0b5-e35ebb440dd3"># Android HARP For Rokid X-Craft
-
----
-
 ## Installation of Necessary Softwares/Toolkits/Packages/Dependencies/SDK
 
 ### Getting the required Assets
@@ -215,8 +211,8 @@ The running results are shown as below. The Sample offers head control tracking,
 ![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image%20(1).png)
 
 ## To Access your Device in Rokid
-Install [glassmate](https://rokid.ai/support-center/)
+- Install [glassmate](https://rokid.ai/support-center/)
 
 ## For more information on Rokid
-Information on Device: https://rokid.ai/faqs/
-Developer Documentaion by Rokid: https://rokid.yuque.com/ouziyq/tvgpgk?#%20%E3%80%8ARokid%20Developer%20Documentation%E3%80%8B
+- Information on Device: https://rokid.ai/faqs/
+- Developer Documentaion by Rokid: https://rokid.yuque.com/ouziyq/tvgpgk?#%20%E3%80%8ARokid%20Developer%20Documentation%E3%80%8B
