@@ -1,4 +1,4 @@
-# Active Mobility Web App
+# Android HARP For Rokid X-Craft
 
 ---
 
@@ -7,16 +7,39 @@
 ### Getting the required Assets
 Git Clone / Pull or Download as Zip in the following GitHub Repository
 
+### Installation of Window SDK
+Install the Window SDK (Version 10.0.19041.0) needed for Hololens 2. Click [here](https://go.microsoft.com/fwlink/?linkid=2120843) to download if not find the references [here](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/)
+
 ### Installation of Unity Hub
 Unity Hub is required to open or run any of the Unity Projects. You can install them by clicking [here](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe) if not visit the official website [here](https://unity3d.com/get-unity/download)
 
 ### Choose your appropriate Unity Version that you need.
-For this case we're using **2022.3.11f1** where you can find all the archive [here](https://unity3d.com/get-unity/download/archive)
+For this case we're using **2020.3.33f1** where you can find all the archive [here](https://unity3d.com/get-unity/download/archive)
+
+Modules needed for Unity 2020.3.33f1 to Develop in Hololens 2
+- Universal Windows Platform Build Support
+- Windows Build Support
+- Visual Studio (VS Community 2022 / 2019)
+
+![image](https://user-images.githubusercontent.com/25051402/201806064-b90d99e9-ae9a-4ba3-bff0-f3c956019f6e.png)
+![image](https://user-images.githubusercontent.com/25051402/201806166-feb51ed6-af68-427a-b5cd-2b279643137e.png)
+![image](https://user-images.githubusercontent.com/25051402/201806250-29ca0947-71f9-409d-9ca0-0ff73720eaf7.png)
 
 ### Choose the Visual Studio you prefer to use
 Tested with VS Community 2022 and VS Commmunity 2019. You can find these [here](https://visualstudio.microsoft.com/downloads/)
 
 Go to Visual Studio Installer and Download the Necessary Workloads Stated Below
+
+Under Desktop & Mobile Section
+- Universal Windows Platform Development
+- .NET Desktop Development
+- Desktop Development with C++
+![image](https://user-images.githubusercontent.com/25051402/201803875-bfa8e8e3-a7d1-469f-b146-a69d337741cd.png)
+
+Under Gaming
+- Game Development with Unity
+- Game development with C++ 
+![image](https://user-images.githubusercontent.com/25051402/201804092-12f338fd-ff86-4305-af80-c1b1605f9223.png)
 
 ### Unity 3rd Party Packages
 - [SuperTiled2Unity](https://seanba.itch.io/supertiled2unity)
