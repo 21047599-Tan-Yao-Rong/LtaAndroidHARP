@@ -90,15 +90,21 @@ Under Gaming
 
 ## Installing and Importing Packages in Unity
 
-In a new project, choose Windows > Package Manager and select "+" > Add package from disk. Then [download](https://ota-g.rokidcdn.com/toB/Rokid_Glass/SDK/UXR_SDK/Unity/forDock/RokidUXR_Unity_ForDock_v1.6.2.zip) and unzip the package.json file under the RokidUXR_SDK_Unity_ForDock/sxrunitysdk-UXR_vdock directory, and import the Google Cardboard plug-in.
+Step 1: In a new project, choose Windows > Package Manager and select "+" > Add package from disk. Then [download](https://ota-g.rokidcdn.com/toB/Rokid_Glass/SDK/UXR_SDK/Unity/forDock/RokidUXR_Unity_ForDock_v1.6.2.zip) and unzip the package.json file under the RokidUXR_SDK_Unity_ForDock/sxrunitysdk-UXR_vdock directory, and import the Google Cardboard plug-in.
 
 ![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image.png)
+
+Step 2: Choose Unity > Assets > Import Package > Custom Package, select UXR_Dock_v.unitypackage in the UXR SDK, and import all resources.
+ Tips:  The version number is in X.Y.Z format. (For exampe, 1.1.0).
+
+ ![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/Step%202.1.png)
+ ![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/Step2.2.png)
 
 ---
 ## Code walkthrough / explanation 
 
-GC.cs 
-- Within GC mostly contain codes that affect the gameobjects that the player comes in contact with. you'll primarily find codes responsible for handling interactions between the player and various game objects, such as coins and roads. Additionally, the script includes functions that enable the player to lose health upon collision with roads or vehicles. Adding of points and what happens when the game ends.
+UploadToDrive.cs 
+- Contain codes that allows connection to One drive using APIs, it detects what is checked/unchecked in the checkList and converts them into JSON format after that it is send into one drive & contain codes to allow the files to be saved locally
 
 Playermovement.cs
 - The script contains codes that affect player movement. It contains the code of not allowing players to go backwards within the game. It also contains the code which disables/enables the gamepad when using either the web/mobile to play the game.
