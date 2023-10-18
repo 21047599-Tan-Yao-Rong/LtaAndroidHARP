@@ -1,4 +1,4 @@
-# Android HARP For Rokid X-Craft
+<img width="449" alt="image" src="https://github.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/assets/106369408/4199b8b0-7468-4f2a-b0b5-e35ebb440dd3"># Android HARP For Rokid X-Craft
 
 ---
 
@@ -214,102 +214,9 @@ The running results are shown as below. The Sample offers head control tracking,
 
 ![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image%20(1).png)
 
-To test how it looks on WebPage, 
-Click File -> Build Setting -> Select WebGL -> Build and Run
+## To Access your Device in Rokid
+Install [glassmate](https://rokid.ai/support-center/)
 
-![image](https://user-images.githubusercontent.com/25051402/209916109-94901c68-c116-451c-970f-a46e2f650f19.png)
-
-For Deploying, Zip the file and upload to [itch.io](itch.io)
-
-1) Log-in with the following email and password, taamgame@gmail.com | ActiveMobility123
-2) Navigate to the drop down arrow located at the top right and upload project
-
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/95601ba0-a4d2-496c-991e-4dd13db3e99f)
-
-3) You can then fill up the basic information of the game and upload the project onto itch for testing
-
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/b09616bd-5646-41ce-a82a-729396a9ce33)
-
----
-## Update or manage Leaderboard
-
-You can manage the leaderboard by accessing it through this link: [Leaderboard Creator by Danial Jumagaliyev (itch.io)](https://danqzq.itch.io/leaderboard-creator). You can then choose to either Create a new leaderboard or make use of existing leaderboards. 
-
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/df1ef533-ab82-41fe-bef0-a0e9c48dc63c)
-
-If you would like to add the existing leaderboard into the site, you just have to copy the string of key located in leaderboard.cs. and paste it in.
-
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/23e903b1-dea5-49d4-aace-5a618dc0fd6e)
-
-If you choose to add a new leaderboard you can do so but if you want the game to make use of the newly created leaderboard, you would have to copy the secret key and replace the string of key located in leaderboard.cs
-
-private string publicLeaderboardKey = "9adf1b039fb92837c0a268411dd78ff70a7820d1734da55b9640cdcf9f7561fa";
-
----
-## Update or Create new maps through the 2DTiledMap application 
-
-1) 	In Tiled, click File located at the top-left corner, hover over New and select New Map.
-   
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/ec075be5-c259-4cda-b543-bb3af3859e03)
-
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/043d69e0-43fe-4386-8792-aab08eac3d59)
-
-2) 	Map properties should be based on the image shown and save the map into "MapWithColliders".
-   
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/a3b29bd5-f04d-48ec-a0a7-257fa5be3162)
-
-### Adding a new scene for the new level and inserting the newly created map.
-
-1) In Unity, under Project located at bottom left corner, proceed into the Scene folder. Once in it, right-click and hover over Create. Select Scene to create a new scene. This can be called “Level 2” or any suitable names.
-   
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/6c528572-0071-4ebd-bf49-40257b25dd76)
-
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/8cae9d75-a63a-4cd6-a2fc-c3b0e3ab8c7a)
-
-2) To add a new map from Tiled, double click the newly created scene to be in that specific scene. Once done, find the map created and saved previously into the folder and drag it into the scene.
-   
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/ba448f65-2f0a-4dd9-9cda-3d231e40375d)
-
-3) To update the map, follow along the Demo1 video.
-
-### Stage/Levels, Moving from one scene to another with the use of buttons.
-
-1) To create a button in Unity, under the GameObject menu, hover to UI and click Button – TextMeshPro.
-2) For the scene that wants to be displayed, ensure it is added to “Scenes In Build” located in Build Settings.
-3) Using the MapLoaderScript.loadScene, input the scene number assigned in the Build Settings to load the respective map/level.
-
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/01a5c1bb-5d01-49cb-898c-9d50660cbf5e)
-
-Refer to demo2 video.
-
-### Updating UI with new graphics.
-
-1) To update the UI for the game, head over to the Hierarchy of the unity project and look for canvas.
-   
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/060fc08d-cd85-4a58-9ce4-51cc4285a329)
-
-2) To change the graphics for the player information at the top left, you can edit the playerinfo prefab located in the hierachy.
-3) you can then edit any of the prefab with images under the inspector.
-
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/29ceef97-fbbe-4688-889f-06f25f398db1)
-
-4) The notable UI are PlayerInfo, NotifPop, TutorialPop, Popup, PauseMenu, D-Pad and any buttons or texts found in the canvas hierarchy.
-   
----
-## Extra guide
-
-- [Tiled](https://www.youtube.com/watch?v=ZwaomOYGuYo&list=PL6wuv1YGOTFfxi8pdN2ghWmDqZqy3_XA7)
-- [Aseprite](https://www.youtube.com/watch?v=tFsETEP01k8)
-- [Unity Web Game](https://youtube.com/playlist?list=PL4vbr3u7UKWp0iM1WIfRjCDTI03u43Zfu)
-- [Leaderboard Guide](https://youtu.be/-O7zeq7xMLw?si=kUbx0BF7NEU8RBM_)
-- To use tilemap in unity directly instead of using [Tiled](https://www.mapeditor.org/). Refer [here](https://www.youtube.com/watch?v=ryISV_nH8qw&t=627s)
-- Collison and Layer Sorting using [Tiled](https://www.mapeditor.org/) and Unity. Refer [here](https://www.youtube.com/watch?v=iJINzMUxlkA&t=220s)
-- [Level framework](https://forum.unity.com/threads/progression-xp-points-leveling-framework.428087/)
-- [Level/Stage selection](https://youtu.be/YAHFnF2MRsE?si=r_Z3f4p57ePkSTWq) and [here](https://youtu.be/vpbPd6jNEBs?si=snZCrgQ_oCNPmw6k)
-
-## Quick Guide on Creating Boundaries
-
-![image](https://user-images.githubusercontent.com/25051402/210027918-6126524c-4a9e-40b3-8784-d9bde1885c7e.png)
-![image](https://user-images.githubusercontent.com/25051402/210028050-8cb97f71-7022-463b-a803-9bd616c1ed7a.png)
-
-Remember to save after adding borders to your tileset Asset
+## For more information on Rokid
+Information on Device: https://rokid.ai/faqs/
+Developer Documentaion by Rokid: https://rokid.yuque.com/ouziyq/tvgpgk?#%20%E3%80%8ARokid%20Developer%20Documentation%E3%80%8B
