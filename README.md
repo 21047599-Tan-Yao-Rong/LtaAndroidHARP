@@ -23,7 +23,7 @@ Modules needed for Unity 2020.3.33f1 to Develop in Hololens 2
 
 ![image](https://user-images.githubusercontent.com/25051402/201806064-b90d99e9-ae9a-4ba3-bff0-f3c956019f6e.png)
 ![image](https://user-images.githubusercontent.com/25051402/201806166-feb51ed6-af68-427a-b5cd-2b279643137e.png)
-![image](https://user-images.githubusercontent.com/25051402/201806250-29ca0947-71f9-409d-9ca0-0ff73720eaf7.png)
+![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/New.png)
 
 ### Choose the Visual Studio you prefer to use
 Tested with VS Community 2022 and VS Commmunity 2019. You can find these [here](https://visualstudio.microsoft.com/downloads/)
@@ -136,30 +136,9 @@ ClickedDocument.cs
 ClickedQRScanner.cs
 - The script contains the code that links the QR scanner in Rokid and it will open up the QR scanner when the script is called, the QR code that has been scanned will be send back to the script and a google chrome will open using the QR code that has been scanned
 
----
-## Linking up Visual Studio and Unity for Auto Complete statements when coding / developing in Visual Studio
+### Switching Platform to Android
 
-Go to Edit -> Preferences -> External Tools
-
-Select the Visual Studio Version you prefer for the External Script Editor 
-
-Under the 'Generate .csproj files for' 
-Check the following
-- Embedded packages
-- Local packages
-- Registry packages
-- Git packages
-- Built-in packages
-- Local tarball
-- Packages from unknown source
-- Player projects
-
-![image](https://user-images.githubusercontent.com/25051402/201814555-b883820b-f0c9-43b9-8ba7-52a8ad66a7fb.png)
-![image](https://user-images.githubusercontent.com/25051402/201815209-163efeb2-6fe6-4a0c-a076-237235f14db8.png)
-
-### Switching Platform to WebGL
-
-Go to File -> Build Setting -> WebGL
+Go to File -> Build Setting -> Android
 
 If not Downloaded, Download in Unity Editor and Restart the Project
 
