@@ -137,24 +137,82 @@ ClickedQRScanner.cs
 
 ### Switching Platform to Android
 
-Go to File -> Build Setting -> Android
+Choose Unity > File > Build Settings. Select Android and then Switch Platform. 
 
 If not Downloaded, Download in Unity Editor and Restart the Project
 
-### Disable Compression Format
+![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image%202.png)
 
-1) Go to File -> Build Settings -> Player Settings
-![image](https://user-images.githubusercontent.com/25051402/209916303-b1eee72e-7d6f-4247-b259-fe19e5b264ec.png)
-2) Go to Player -> Publishing Settings
-3) Under Compression Format -> Select Disabled
-![image](https://user-images.githubusercontent.com/25051402/209916468-305da456-01d2-469c-bf6a-e2f6e21415a0.png)
+Choose Project Settings > Player > Resolution and Presentation.
+- Set Default Orientation to Landscape Left;
+- Disable Optimized Frame Pacing.
 
+![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image%203.png)
+
+Choose Project Settings > Player > Other Settings.
+- Select OpenGLES3 or OpenGLES2 or both in Graphics APIs;
+- Select IL2CPP in Scripting Backend;
+- Select ARMv7 or ARM64 in Target Architectures depending on the target platform;
+- Set Package Name.
+
+![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image%204.png)
+
+Choose Project Settings > Player > Publishing Settings. 
+- Select Custom Base Gradle Template in Build;
+- Select Custom Main Gradle Template in Build;
+- Select Custom Main Manifest in Build;
+- If you are using Unity 2020.1 or lower version of Unity, you also need to select the Custom Gradle 
+  Properities Template
+![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image%205.png)
+
+Choose Project Settings > XR Plug-in Management.
+- Select Initialize XR on Startup;
+- Select Cardboard XR Plugin under Plug-in projects.
+
+![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image%206.png)
+
+## Open Unity Project and modify it by following the steps below: 
+![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image%207.png)
+
+1. Add the following in "repositories" under Assets/Plugins/Android/baseProjectTemplate.gradle (This needs to be added in two places of the file and should be added under the existing jcenter().):
+
+ maven { url 'https://maven.rokid.com/repository/maven-public/' }
+
+ ![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image%209.png)
+
+ 2. Add the following in "dependencies" under the Assets/Plugins/Android/mainTemplate.gradle:
+
+implementation 'com.android.support:appcompat-v7:28.0.0'
+implementation 'com.android.support:support-v4:28.0.0'
+implementation 'com.google.android.gms:play-services-vision:15.0.2'
+implementation 'com.google.protobuf:protobuf-javalite:3.19.4'
+implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.71"
+implementation 'com.rokid.ai.glass:instructsdk:1.7.2'
+
+![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image%2010.png)
+
+3. In the "activity" tag row under Assets/Plugins/Android/AndroidManifest.xml, modify android:name to com.rokid.uxrplugin.activity.UXRUnityActivity as follows:
+
+   <activity android:name="com.rokid.uxrplugin.activity.UXRUnityActivity"              
+          android:theme="@style/UnityThemeSelector">
+          
+Then declare the required permissions for the app in AndroidManifest.xml (For details, see the figure above). For example,
+
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />     
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image%2012.png)
+ 
 ---
 ## Testing & Deploying
 
-For Testing, just press play in Unity.
+Choose File > Build Settings.
+Import all the scenes in the sample. 
+Select Build, or specify a device and select Build and Run.
+The running results are shown as below. The Sample offers head control tracking, speech recognition, gesture recognition, and other functions.
 
-![image](https://user-images.githubusercontent.com/25051402/209916155-7e40f7d6-c903-48ad-be9b-ffde3bf23a8d.png)
+![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image%20(1).png)
 
 To test how it looks on WebPage, 
 Click File -> Build Setting -> Select WebGL -> Build and Run
