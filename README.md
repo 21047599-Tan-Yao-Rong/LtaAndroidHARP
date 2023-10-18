@@ -72,7 +72,6 @@ Under Gaming
 - Applications
 - User Input
 
-====================== Still Doing
 ---
 ## Setting up the Working Environment from Downloaded Asset
 
