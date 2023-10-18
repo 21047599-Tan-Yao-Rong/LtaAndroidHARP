@@ -46,14 +46,19 @@ Under Gaming
   
 ====================== Still Doing
 ---
-## Objective of the game
 
-- The Active Mobility Game is designed to offer users invaluable insights into the nuances of road safety as they manoeuvre through the intricate web of lanes and navigate the ever-changing traffic lights in the vibrant streets of Singapore.
+## Problems faced when only using HARP in HoloLens
+- Current limitations in our testing environment stem from the exclusive reliance on Hololens, no other alternative devices with other capability to use.
 
--	Within this immersive gaming experience, your mission is to safely reach your desired destination by adhering to a set of foundational traffic rules. Deviating from these rules will result in the loss of one precious life, so stay alert and follow the road code diligently.
+- Deployment of HARP, which is developed specifically for Hololens, on other devices is currently unfeasible as HARP is only created on Windows Operating system
 
--	Our goal for the game is to provide an engaging journey through a series of meticulously designed levels or stages. Each stage is designed to present you with distinct learning points and scenarios, ensuring that you acquire a comprehensive understanding of road safety as you progress.
-  
+## Objective of porting over HARP from Hololens to Rokid
+- Expand our testing capabilities
+
+- Explore the compatibility of HARP with various Android devices
+
+- Optimize HARP for the different hardware in Rokid
+ 
 ---
 ## Architecture diagram
 ![Untitled Diagram drawio (4)](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/66571854-a017-46a6-ae1e-2121911cc501)
