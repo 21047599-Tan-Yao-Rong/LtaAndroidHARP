@@ -41,17 +41,9 @@ Under Gaming
 - Game development with C++ 
 ![image](https://user-images.githubusercontent.com/25051402/201804092-12f338fd-ff86-4305-af80-c1b1605f9223.png)
 
-### Unity 3rd Party Packages
-- [SuperTiled2Unity](https://seanba.itch.io/supertiled2unity)
-- [Leaderboard Package](https://danqzq.itch.io/leaderboard-creator/download/eyJleHBpcmVzIjoxNjk2OTExNzc2LCJpZCI6MTE1NDU0OX0%3d.6wJHD42kz3l3krzHELR%2bb38XtUE%3d)
-
-### Installation of Map Editor and Pixel Art Creation Software
-- [Tiled](https://www.mapeditor.org/)
-- [Aseprite](https://www.aseprite.org/) or [pixel art](https://www.pixilart.com/draw) online
-
-### Convert Image to Pixel Art
-- [Pixel It](https://giventofly.github.io/pixelit/)
-
+### Rokid UXR SDK
+- [UXR SDK Download]([https://seanba.itch.io/supertiled2unity](https://ota-g.rokidcdn.com/toB/Rokid_Glass/SDK/UXR_SDK/Unity/forDock/RokidUXR_Unity_ForDock_v1.6.2.zip))
+====================== Still Doing
 ---
 ## Objective of the game
 
