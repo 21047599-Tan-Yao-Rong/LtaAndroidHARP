@@ -61,7 +61,7 @@ Under Gaming
  
 ---
 ## Architecture diagram
-![Untitled Diagram drawio (4)](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/66571854-a017-46a6-ae1e-2121911cc501)
+![Untitled Diagram drawio (4)](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/Screenshot%202023-10-18%20160700.png)
 
 ---
 ## Modules of the games
