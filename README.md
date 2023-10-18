@@ -44,7 +44,6 @@ Under Gaming
 ### Rokid UXR SDK
 - [UXR SDK Download](https://ota-g.rokidcdn.com/toB/Rokid_Glass/SDK/UXR_SDK/Unity/forDock/RokidUXR_Unity_ForDock_v1.6.2.zip)
   
-====================== Still Doing
 ---
 
 ## Problems faced when only using HARP in HoloLens
@@ -64,15 +63,16 @@ Under Gaming
 ![Untitled Diagram drawio (4)](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/Screenshot%202023-10-18%20160700.png)
 
 ---
-## Modules of the games
+## Main Components of HARP
 
--	Menu Module
--	Objective Module
--	Map Module
--	Score Module
--	Gameplay Module
--	Leader board Module
+- User Interface
+- Photon
+- AR Frameworks
+- Cloud Services
+- Applications
+- User Input
 
+====================== Still Doing
 ---
 ## Setting up the Working Environment from Downloaded Asset
 
