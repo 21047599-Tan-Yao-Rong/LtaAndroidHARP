@@ -106,38 +106,35 @@ Step 2: Choose Unity > Assets > Import Package > Custom Package, select UXR_Dock
 UploadToDrive.cs 
 - Contain codes that allows connection to One drive using APIs, it detects what is checked/unchecked in the checkList and converts them into JSON format after that it is send into one drive & contain codes to allow the files to be saved locally
 
-Playermovement.cs
-- The script contains codes that affect player movement. It contains the code of not allowing players to go backwards within the game. It also contains the code which disables/enables the gamepad when using either the web/mobile to play the game.
+TodoClose.cs & OpenCheckList.cs
+- The script that provides codes to open the checkList and to close the checkList
 
-TileManager.cs
-- The script contains codes that generates out the maps in the list in a random order. The object that has the script attached to has the list of maps that are in random order. If more new maps are being created, you can add them into the list.
+ScrollMainMenu.cs
+- The script contains codes that provides the function for the user to scroll up and down in the main menu and select the applications in the main menu
 
-TrafficLightCar.cs & TrafficSystem.cs
-- Both scripts contains codes that changes the animator for the traffic lights based on a specific duration. The value can be changed in the code. 
+VoiceMainMenu.cs
+- The script contain codes that provides allows the user to use voice command to activate features like "going into checkList App" etc.
 
-VehicleMovement.cs
-- the script contains codes that changes the car movement and positioning on the road. Changing of speed can also be changed from the script.
+HandGestureMainMenu.cs
+- The script contain codes that allows the user's hand gesture to be detected by Rokid, there is 3 different gesture that is being used, "Open palm" "Close palm" "Pinch" . Close palm will move the hand Menu around, Pinch is like a select Button. Open palm is for navigating using hand gestures.
 
-Readxml.cs
-- within Readxml are codes that specifically to manage text associated with popups and notifications. 'ReadXML' provides a convenient way to modify these texts without the need for direct in-game editing. You can effortlessly upload this code to GitHub and customize it to display your preferred text variations."
+RayCaster.cs
+- The script contains a RayCast which is able to detect what the user's hand gesture is pointing at and provides the input for the HandGesture Script
 
-PopupManager.cs
-- The script contains the behaviour of the popups when it is being toggled on or off. 
+SceneLoader.cs
+- The script contain what scene is to be loaded when it is selected.
 
-ButtonToggleScript.cs
-- The script is linked to popupmanager and what it does is that is saves the toggle state of the toggle and how the toggle button behaves.
+FaceDetect.cs 
+- Contains code that opens up the Camera in the device, the photo data is send to the Face Detect API, the photo data will be processed and results will be given
 
-HealthManager.cs 
-- The HealthManager manages the hearts of the game which is located at the top left of the player information. It contains code that shows the hearts as well as the the additional points which will be added accordingly once the player ends the game with x number of hearts left.
+ObjectDetect.cs
+- Contains code that opens up the Camera in the device, the photo data is send to the Object Detect API, the photo data will be processed and results will be given
 
-DistanceCalculator.cs
-- The distance calculator checks the distance which the player has covered, distance between gems and the player as well as the behaviour of how the compass reacts when the player is near a gem.
+ClickedDocument.cs
+- The script contains the code that links the document viewer in Rokid and it will open up the document viewer when the script is called
 
-Scoremanager.cs
-- The scoremanager will invoke and parse the score that is saved in the end game screen which will allow you to submit the values into the leaderboard and display them.
-
-Leaderboard.cs
-- The leaderboard script makes use of an api key that uses a leaderboard plugin which can be accessed by us to manage the leader board. Uploading an entry or deleting an entry can be done via code as well. 
+ClickedQRScanner.cs
+- The script contains the code that links the QR scanner in Rokid and it will open up the QR scanner when the script is called, the QR code that has been scanned will be send back to the script and a google chrome will open using the QR code that has been scanned
 
 ---
 ## Linking up Visual Studio and Unity for Auto Complete statements when coding / developing in Visual Studio
