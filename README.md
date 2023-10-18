@@ -86,15 +86,13 @@ Under Gaming
 ### Creating the Project
 
 1) Open Unity Hub
-2) New Project -> 2D (Core)
+2) New Project -> 3D (Core)
 
 ## Installing and Importing Packages in Unity
 
-Install the [SuperTiled2Unity](https://seanba.itch.io/supertiled2unity) for Unity by Assets -> Import Package -> Custom Package -> Select [SuperTiled2Unity](https://seanba.itch.io/supertiled2unity)
+In a new project, choose Windows > Package Manager and select "+" > Add package from disk. Then download and unzip the package.json file under the RokidUXR_SDK_Unity_ForDock/sxrunitysdk-UXR_vdock directory, and import the Google Cardboard plug-in.
 
-If you've imported the game and encounter any errors related to the scene order, you can resolve them by navigating to Unity's Build Settings. There, you should ensure that the scene numbers are configured to load the first scene of the game, which in this case is the MainScene. Adjusting this setting correctly will help resolve any scene-related issues that may arise during setup.
-
-![image](https://github.com/20145050-Vernon-Ong/Active-Mobility-Game/assets/104333224/f53b2d04-8eb4-4bb1-886b-1807c08cebe3)
+![image](https://raw.githubusercontent.com/21047599-Tan-Yao-Rong/LtaAndroidHARP/main/image.png)
 
 ---
 ## Code walkthrough / explanation 
